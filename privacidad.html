@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidad · DatoVortice</title>
+  <meta name="description" content="Política de privacidad de DatoVortice: qué datos obtiene la herramienta privada de automatización mediante la API de YouTube Data v3, para qué se usan, cuánto tiempo se conservan, cómo se protegen y cómo eliminarlos o revocar el acceso.">
+  <meta name="theme-color" content="#06121d">
+  <link rel="icon" href="favicon.ico" sizes="64x64">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="contenedor barra">
+      <a class="marca" href="index.html" aria-label="DatoVortice, inicio">
+        <img src="assets/emblema.png" width="42" height="42" alt="">
+        <span>Dato<b>Vortice</b></span>
+      </a>
+      <input class="menu-check" type="checkbox" id="menu" aria-label="Abrir o cerrar el menú">
+      <label class="menu-boton" for="menu" aria-hidden="true"><span></span></label>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#canal">El canal</a></li>
+        <li><a href="index.html#herramienta">Herramienta</a></li>
+        <li><a href="privacidad.html" aria-current="page">Privacidad</a></li>
+        <li><a href="condiciones.html">Condiciones</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+        <li><a class="destacado" href="https://www.youtube.com/@DatoVortice" rel="noopener">Ver el canal</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="contenido" class="legal">
+    <div class="contenedor">
+      <div class="legal-cabecera aparece">
+        <span class="etiqueta">Legal</span>
+        <h1 style="font-size:clamp(1.9rem,4.4vw,2.8rem)">Política de privacidad</h1>
+        <p>Última actualización: 20 de noviembre de 2026</p>
+      </div>
+
+      <div class="legal-caja aparece retraso-1">
+        <nav class="indice" aria-label="Índice">
+          <p>Contenido</p>
+          <ol>
+            <li><a href="#quien">Quién es el responsable</a></li>
+            <li><a href="#datos">Datos que obtenemos de la API de YouTube</a></li>
+            <li><a href="#uso">Para qué los usamos</a></li>
+            <li><a href="#almacenamiento">Qué almacenamos y durante cuánto tiempo</a></li>
+            <li><a href="#seguridad">Cómo protegemos las credenciales</a></li>
+            <li><a href="#terceros">Servicios externos y terceros</a></li>
+            <li><a href="#limitado">Uso limitado de datos de Google</a></li>
+            <li><a href="#eliminar">Eliminación de datos</a></li>
+            <li><a href="#revocar">Revocar la autorización de Google</a></li>
+            <li><a href="#cookies">Cookies y rastreo en esta web</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#cambios">Cambios en esta política</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="quien">1. Quién es el responsable</h2>
+        <p>DatoVortice es un canal de YouTube de historia, geografía y curiosidades (<a href="https://www.youtube.com/@DatoVortice" rel="noopener">youtube.com/@DatoVortice</a>). El titular del canal es el responsable de la herramienta de automatización descrita en esta web y de esta política.</p>
+        <p>La herramienta es una aplicación de escritorio de <strong>uso propio</strong>: no se comercializa, no se ofrece a terceros y no tiene registro ni inicio de sesión para visitantes. <strong>El único usuario es el titular del canal</strong>, que acepta esta política al autorizar el acceso a su propia cuenta de Google. Esta aplicación utiliza los servicios de la API de YouTube.</p>
+
+        <h2 id="datos">2. Datos que obtenemos de la API de YouTube</h2>
+        <p>La herramienta utiliza la <strong>API de YouTube Data v3</strong> con dos permisos (ámbitos OAuth): <code>youtube.upload</code> (subir vídeos) y <code>youtube.readonly</code> (consultar datos del propio canal). A través de ellos solo realiza estas operaciones, siempre sobre el canal de DatoVortice:</p>
+        <ul>
+          <li><strong>Consulta del canal</strong> (<code>channels.list</code>): identificador, nombre y @handle del canal autorizado, para comprobar que es el correcto antes de subir nada.</li>
+          <li><strong>Subida de vídeos</strong> (<code>videos.insert</code>): se envía a YouTube un vídeo propio ya aprobado, con su título, descripción, etiquetas, visibilidad y fecha de programación. YouTube devuelve el identificador del vídeo.</li>
+          <li><strong>Consulta de vídeos propios</strong> (<code>videos.list</code>): visibilidad, fecha de programación, estado de procesamiento y duración de vídeos de nuestro canal, para confirmar que una subida o programación se ha aplicado.</li>
+        </ul>
+        <div class="nota"><p><strong>Lo que no hacemos.</strong> No obtenemos ni tratamos datos de espectadores, suscriptores, comentarios, estadísticas de audiencia, correos ni contraseñas, ni datos de ninguna otra cuenta. Aunque el permiso <code>youtube.readonly</code> permitiría leer más datos de la cuenta, la herramienta no realiza ninguna otra llamada que las tres anteriores. La herramienta nunca recibe la contraseña de Google: el inicio de sesión ocurre en el navegador, en accounts.google.com.</p></div>
+
+        <h2 id="uso">3. Para qué los usamos</h2>
+        <p>Exclusivamente para gestionar el propio canal: comprobar que se autoriza la cuenta correcta, subir vídeos propios (siempre primero en privado), programar su publicación, verificar su estado y evitar subir el mismo vídeo dos veces. No usamos estos datos para publicidad, elaboración de perfiles, venta, estudios de mercado ni ningún otro fin. No utilizamos los datos obtenidos de las API de Google para desarrollar, mejorar ni entrenar modelos de inteligencia artificial o aprendizaje automático.</p>
+
+        <h2 id="almacenamiento">4. Qué almacenamos y durante cuánto tiempo</h2>
+        <p>No existe ningún servidor, base de datos ni almacenamiento en la nube propios. Todo se guarda localmente en el ordenador del titular:</p>
+        <div class="tabla-envoltura">
+          <table>
+            <thead><tr><th>Dato</th><th>Dónde</th><th>Para qué</th><th>Cuánto tiempo</th></tr></thead>
+            <tbody>
+              <tr><td>Token de renovación OAuth, permisos concedidos y fecha de creación</td><td>Archivo local en la carpeta de usuario de Windows, fuera del código del proyecto</td><td>Obtener accesos temporales sin repetir el inicio de sesión</td><td>Hasta que se revoque la autorización o se borre el archivo</td></tr>
+              <tr><td>Token de acceso</td><td>Solo en memoria durante la ejecución del programa</td><td>Hacer las llamadas a la API</td><td>No se guarda; lo emite Google con caducidad corta</td></tr>
+              <tr><td>Identificador, nombre y @handle del canal</td><td>Archivo local</td><td>Comprobar que se sube al canal correcto</td><td>Hasta que se borre el archivo</td></tr>
+              <tr><td>Registro de vídeos subidos (archivo, identificador, título, visibilidad, fecha)</td><td>Archivo local del proyecto</td><td>Evitar duplicados y llevar el control de publicaciones</td><td>Mientras se use la herramienta; se puede borrar en cualquier momento</td></tr>
+              <tr><td>Credenciales del cliente OAuth (identificador y secreto de la aplicación)</td><td>Archivo local en la carpeta de usuario</td><td>Identificar la aplicación ante Google</td><td>Mientras exista el proyecto de Google Cloud</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>No fijamos un plazo automático de caducidad: los datos se conservan mientras la herramienta esté en uso. Al revocar el acceso o dejar de usarla, los eliminamos conforme a la sección 8. Pueden existir copias de seguridad locales de los mismos archivos en el mismo ordenador, que se eliminan igualmente.</p>
+
+        <h2 id="seguridad">5. Cómo protegemos las credenciales</h2>
+        <p>Describimos lo que realmente hacemos, sin más:</p>
+        <ul>
+          <li>Las credenciales y los tokens se guardan <strong>fuera del código del proyecto</strong>, en la carpeta de usuario de Windows del titular, y están excluidos del control de versiones. El código y los archivos de esta web no contienen ningún secreto.</li>
+          <li>La carpeta tiene permisos de Windows que limitan el acceso al propio usuario, al sistema y a los administradores del equipo.</li>
+          <li>El inicio de sesión usa OAuth 2.0 para aplicaciones de escritorio con PKCE, en el navegador. Las comunicaciones con los servidores de Google usan HTTPS.</li>
+          <li>La herramienta no muestra tokens ni secretos en pantalla ni en sus registros.</li>
+          <li><strong>Limitación importante:</strong> la aplicación <em>no cifra</em> por sí misma el archivo del token de renovación; depende de los permisos de Windows y de la protección general del equipo del titular. No afirmamos que esos archivos estén cifrados.</li>
+        </ul>
+
+        <h2 id="terceros">6. Servicios externos y terceros</h2>
+        <p><strong>No vendemos, cedemos ni transferimos datos obtenidos de las API de Google a terceros</strong> con fines de publicidad, intermediación de datos o elaboración de perfiles. Estos son los servicios externos que intervienen en el trabajo del canal y lo que reciben:</p>
+        <div class="tabla-envoltura">
+          <table>
+            <thead><tr><th>Servicio</th><th>Qué recibe</th></tr></thead>
+            <tbody>
+              <tr><td>Google / YouTube</td><td>Los vídeos, títulos, descripciones y fechas de programación que subimos; el inicio de sesión se hace directamente con Google.</td></tr>
+              <tr><td>ElevenLabs (voz sintética)</td><td>Únicamente el texto de la narración de cada vídeo. No recibe datos de la API de Google ni tokens.</td></tr>
+              <tr><td>Wikimedia Commons, OpenStreetMap y Natural Earth</td><td>Consultas o descargas de imágenes y datos de mapas públicos, con una identificación genérica del canal. No reciben datos de Google ni datos personales.</td></tr>
+              <tr><td>Asistente de programación con IA (Claude Code, de Anthropic)</td><td>El titular usa este asistente para ejecutar los programas locales. Los resultados que aparecen en la terminal —por ejemplo, el nombre del canal, identificadores y el estado de nuestros propios vídeos— pueden formar parte de esa sesión de trabajo. Los tokens y secretos no se muestran nunca.</td></tr>
+              <tr><td>GitHub (GitHub Pages)</td><td>Aloja esta web estática. Como cualquier alojamiento, puede registrar datos técnicos de acceso, como la dirección IP, según <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">su propia política</a>. No hay ningún dato de la API de Google en la web.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>La política de privacidad de Google se encuentra en <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a>. Al usar la herramienta, el titular acepta además los <a href="https://www.youtube.com/t/terms" rel="noopener">Términos del servicio de YouTube</a> y las <a href="https://developers.google.com/youtube/terms/developer-policies" rel="noopener">Políticas para desarrolladores de los servicios de la API de YouTube</a>.</p>
+
+        <h2 id="limitado">7. Uso limitado de datos de Google</h2>
+        <div class="nota"><p>El uso y la transferencia a cualquier otra aplicación de la información recibida de las API de Google se ajustará a la <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado.<br><em>DatoVortice's use and transfer to any other app of information received from Google APIs will adhere to <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</em></p></div>
+
+        <h2 id="eliminar">8. Eliminación de datos</h2>
+        <p>Puedes pedir en cualquier momento que eliminemos los datos almacenados escribiendo al correo de la sección 11. Los eliminaremos en un plazo máximo de <strong>7 días naturales</strong> desde la solicitud o desde la revocación del acceso. Eliminar los datos consiste en:</p>
+        <ol>
+          <li>Borrar de la carpeta de usuario los archivos del token de renovación, del canal y de las credenciales del cliente, junto con sus copias de seguridad locales.</li>
+          <li>Borrar el registro local de vídeos subidos.</li>
+          <li>Revocar el acceso en la cuenta de Google (sección 9), de modo que el token deje de ser válido.</li>
+        </ol>
+        <p>Borrar estos archivos no elimina los vídeos ya publicados en YouTube: esos se gestionan desde YouTube Studio.</p>
+
+        <h2 id="revocar">9. Revocar la autorización de Google</h2>
+        <p>Puedes retirar el acceso de la aplicación en cualquier momento, sin pasar por nosotros, desde la configuración de tu cuenta de Google:</p>
+        <ul>
+          <li><a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a></li>
+          <li><a href="https://security.google.com/settings/security/permissions" rel="noopener">security.google.com/settings/security/permissions</a></li>
+        </ul>
+        <p>La herramienta no incluye un botón propio de revocación: se revoca desde Google. Tras la revocación, el token guardado deja de funcionar y lo eliminamos conforme a la sección 8. Más información sobre las políticas de la API: <a href="https://developers.google.com/youtube/terms/developer-policies" rel="noopener">Políticas para desarrolladores de YouTube</a>.</p>
+
+        <h2 id="cookies">10. Cookies y rastreo en esta web</h2>
+        <p>Esta web es estática: no usa cookies, ni analítica, ni anuncios, ni herramientas de seguimiento, ni fuentes ni scripts de terceros, y no permite que terceros sirvan contenido o anuncios. No tiene formularios, cuentas ni base de datos.</p>
+
+        <h2 id="contacto">11. Contacto</h2>
+        <p>Responsable: el titular del canal DatoVortice. Para preguntas, quejas sobre privacidad o solicitudes de eliminación de datos: <a href="mailto:osetedani@gmail.com">osetedani@gmail.com</a>, o a través del canal <a href="https://www.youtube.com/@DatoVortice" rel="noopener">youtube.com/@DatoVortice</a>.</p>
+
+        <h2 id="cambios">12. Cambios en esta política</h2>
+        <p>Si cambia el funcionamiento de la herramienta, actualizaremos esta página y la fecha de la parte superior. Cualquier ampliación de los permisos de acceso a datos de Google requeriría nueva autorización expresa del titular.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie-rejilla">
+        <div>
+          <h4>DatoVortice</h4>
+          <p>Historia, geografía y curiosidades en vídeos cortos.</p>
+          <p><a href="https://www.youtube.com/@DatoVortice" rel="noopener">youtube.com/@DatoVortice</a></p>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacidad.html">Política de privacidad</a></li>
+            <li><a href="condiciones.html">Condiciones del servicio</a></li>
+            <li><a href="https://www.youtube.com/t/terms" rel="noopener">Términos de YouTube</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Web</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#herramienta">Herramienta</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="legal-pie">© 2026 DatoVortice. Proyecto independiente, sin afiliación con Google ni YouTube. YouTube es una marca de Google LLC.</p>
+    </div>
+  </footer>
+</body>
+</html>

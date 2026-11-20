@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DatoVortice · Historia, geografía y curiosidades</title>
+  <meta name="description" content="DatoVortice es un canal de YouTube de historia, geografía y curiosidades en formato corto. Esta web presenta el canal y su herramienta privada de automatización, que usa la API de YouTube Data v3.">
+  <meta name="theme-color" content="#06121d">
+  <link rel="icon" href="favicon.ico" sizes="64x64">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="contenedor barra">
+      <a class="marca" href="index.html" aria-label="DatoVortice, inicio">
+        <img src="assets/emblema.png" width="42" height="42" alt="">
+        <span>Dato<b>Vortice</b></span>
+      </a>
+      <input class="menu-check" type="checkbox" id="menu" aria-label="Abrir o cerrar el menú">
+      <label class="menu-boton" for="menu" aria-hidden="true"><span></span></label>
+      <ul class="menu">
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="#canal">El canal</a></li>
+        <li><a href="#herramienta">Herramienta</a></li>
+        <li><a href="privacidad.html">Privacidad</a></li>
+        <li><a href="condiciones.html">Condiciones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a class="destacado" href="https://www.youtube.com/@DatoVortice" rel="noopener">Ver el canal</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="contenedor hero-rejilla">
+        <div>
+          <span class="etiqueta aparece">Canal de YouTube</span>
+          <h1 class="aparece retraso-1">Historia, geografía y <em>curiosidades</em> en menos de un minuto</h1>
+          <p class="entradilla aparece retraso-2">DatoVortice cuenta una sola historia por vídeo: un lugar, una fecha, un dato que cambia cómo miras el mapa. Mapas animados, fuentes citadas y mucho cuidado con lo que se afirma.</p>
+          <div class="acciones aparece retraso-3">
+            <a class="btn btn-principal" href="https://www.youtube.com/@DatoVortice" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+              Visitar el canal de YouTube
+            </a>
+            <a class="btn btn-borde" href="#herramienta">Nuestra herramienta</a>
+          </div>
+        </div>
+        <div class="hero-logo aparece retraso-2">
+          <img src="assets/logo.png" width="512" height="512" alt="Logotipo de DatoVortice: un remolino turquesa sobre el nombre del canal">
+        </div>
+      </div>
+    </section>
+
+    <section id="canal">
+      <div class="contenedor">
+        <div class="seccion-titulo">
+          <span class="etiqueta">El canal</span>
+          <h2>Tres ideas, un mismo estilo</h2>
+          <p class="subtitulo">Vídeos verticales de entre 30 y 45 segundos, con narración, mapas animados y un cierre breve. Siempre una única historia.</p>
+        </div>
+        <div class="rejilla">
+          <article class="tarjeta">
+            <div class="icono" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <h3>Historia</h3>
+            <p>Fechas, decisiones y consecuencias contadas con calma: del reparto de un territorio a un pueblo que cambió de mapa.</p>
+          </article>
+          <article class="tarjeta">
+            <div class="icono" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg></div>
+            <h3>Geografía</h3>
+            <p>Fronteras raras, enclaves y lugares con historia, explicados sobre mapas reales para entenderlos de un vistazo.</p>
+          </article>
+          <article class="tarjeta">
+            <div class="icono" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></div>
+            <h3>Curiosidades</h3>
+            <p>Datos sorprendentes que se pueden comprobar: cada vídeo cita las fuentes en su descripción.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="herramienta" class="herramienta">
+      <div class="contenedor">
+        <div class="seccion-titulo">
+          <span class="etiqueta">Herramienta de automatización</span>
+          <h2>Una herramienta privada para publicar con orden</h2>
+          <p class="subtitulo">DatoVortice usa una aplicación de escritorio de <strong>uso propio</strong> para gestionar su propio canal. Utiliza la <strong>API de YouTube Data v3</strong>, con la autorización expresa del titular del canal.</p>
+        </div>
+        <ol class="pasos">
+          <li><strong>Consultar el canal</strong><span>Comprueba que la autorización corresponde al canal correcto (identificador, nombre y @handle).</span></li>
+          <li><strong>Subir vídeos propios</strong><span>Envía a YouTube los vídeos que el titular ya ha revisado y aprobado, siempre primero en privado.</span></li>
+          <li><strong>Programar publicaciones</strong><span>Fija la fecha y hora de publicación de vídeos ya aprobados y vuelve a consultar su estado para confirmarlo.</span></li>
+          <li><strong>Evitar duplicados</strong><span>Lleva un registro local de lo ya subido para no repetir ninguna publicación.</span></li>
+        </ol>
+        <div class="aviso">
+          <strong>Es una herramienta de uso propio.</strong> No se comercializa, no se ofrece a terceros y no tiene registro ni inicio de sesión para visitantes: el único usuario es el titular del canal. Esta web es solo informativa.
+        </div>
+      </div>
+    </section>
+
+    <section id="datos">
+      <div class="contenedor">
+        <div class="seccion-titulo">
+          <span class="etiqueta">Transparencia</span>
+          <h2>Qué datos se usan y qué no</h2>
+          <p class="subtitulo">El detalle completo está en la <a href="privacidad.html">política de privacidad</a>. Lo esencial:</p>
+        </div>
+        <div class="datos">
+          <div class="dato"><b>Solo nuestro canal</b><span>La herramienta accede únicamente a los datos del propio canal de DatoVortice.</span></div>
+          <div class="dato"><b>Sin terceros ni publicidad</b><span>No vendemos ni cedemos datos de Google, ni los usamos para anuncios o perfiles.</span></div>
+          <div class="dato"><b>Esta web, sin rastreo</b><span>No usa cookies, analítica, anuncios ni recursos externos.</span></div>
+        </div>
+        <p class="subtitulo" style="margin-top:22px">Consulta también las <a href="condiciones.html">condiciones del servicio</a>. DatoVortice utiliza los servicios de la API de YouTube y, al usarlos, se aplican los <a href="https://www.youtube.com/t/terms" rel="noopener">Términos del servicio de YouTube</a>.</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <div class="contenedor">
+        <span class="etiqueta">Contacto</span>
+        <h2>¿Hablamos?</h2>
+        <p class="subtitulo" style="margin-inline:auto">Para dudas sobre privacidad, para pedir la eliminación de datos o para cualquier consulta sobre el canal.</p>
+        <div class="tarjeta">
+          <h3>Correo de contacto</h3>
+          <p><a href="mailto:osetedani@gmail.com">osetedani@gmail.com</a></p>
+          <p style="margin-top:10px">También puedes escribirnos en el canal: <a href="https://www.youtube.com/@DatoVortice" rel="noopener">youtube.com/@DatoVortice</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie-rejilla">
+        <div>
+          <h4>DatoVortice</h4>
+          <p>Historia, geografía y curiosidades en vídeos cortos.</p>
+          <p><a href="https://www.youtube.com/@DatoVortice" rel="noopener">youtube.com/@DatoVortice</a></p>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacidad.html">Política de privacidad</a></li>
+            <li><a href="condiciones.html">Condiciones del servicio</a></li>
+            <li><a href="https://www.youtube.com/t/terms" rel="noopener">Términos de YouTube</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Web</h4>
+          <ul>
+            <li><a href="#canal">El canal</a></li>
+            <li><a href="#herramienta">Herramienta</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="legal-pie">© 2026 DatoVortice. Proyecto independiente, sin afiliación con Google ni YouTube. YouTube es una marca de Google LLC.</p>
+    </div>
+  </footer>
+</body>
+</html>
